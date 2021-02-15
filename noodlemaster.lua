@@ -76,7 +76,7 @@ mobs:spawn({
 	name = "livingnether:noodlemaster",
 	nodes = {"nether:rack_deep"},
 	min_light = 0,
-	interval = 1200,
+	interval = 600,
 	chance = 8000, -- 15000
 	min_height = -8000,
 	max_height = -3000,
