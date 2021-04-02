@@ -71,7 +71,7 @@ view_range = 20,
 	end,
 })
 
-if not mobs.custom_spawn_monster then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:noodlemaster",
 	nodes = {"nether:rack_deep"},

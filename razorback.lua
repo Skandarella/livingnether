@@ -59,7 +59,7 @@ stepheight = 2,
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:razorback",
 	nodes = {"nether:rack"},

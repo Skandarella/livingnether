@@ -52,7 +52,7 @@ mobs:register_mob("livingnether:sokaarcher", {
 	},
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:sokaarcher",
 	nodes = {"nether:rack_deep"},

@@ -9,7 +9,7 @@ stepheight = 3,
 	hp_min = 45,
 	hp_max = 60,
 	armor = 100,
-	collisionbox = {-0.3, -0.01, -1, 0.3, 0.3, 0.3},
+	collisionbox = {-0.3, -0.01, -0.3, 0.3, 0.5, 0.3},
 	visual = "mesh",
 	mesh = "Flyingrod.b3d",
 	visual_size = {x = 1.0, y = 1.0},
@@ -61,7 +61,7 @@ view_range = 4,
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:flyingrod",
 	nodes = {"nether:rack"},

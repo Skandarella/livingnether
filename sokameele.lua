@@ -8,7 +8,7 @@ mobs:register_mob("livingnether:sokameele", {
 	hp_min = 80,
 	hp_max = 125,
 	armor = 100,
-	collisionbox = {-0.5, -0.01, -0.5, 0.5, 0.95, 0.5},
+	collisionbox = {-0.5, -0.01, -0.5, 0.5, 1.5, 0.5},
 	visual = "mesh",
 	mesh = "Sokameele.b3d",
 	visual_size = {x = 1.0, y = 1.0},
@@ -52,7 +52,7 @@ mobs:register_mob("livingnether:sokameele", {
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:sokameele",
 	nodes = {"nether:rack_deep"},

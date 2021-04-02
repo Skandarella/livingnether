@@ -9,7 +9,7 @@ mobs:register_mob("livingnether:whip", {
 	hp_min = 45,
 	hp_max = 60,
 	armor = 100,
-	collisionbox = {-0.4, -0.01, -0.4, 0.4, 0.8, 0.4},
+	collisionbox = {-0.4, -0.01, -0.4, 0.4, 2, 0.4},
 	visual = "mesh",
 	mesh = "Whip.b3d",
 	visual_size = {x = 1.0, y = 1.0},
@@ -56,7 +56,7 @@ view_range = 4,
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:whip",
 	nodes = {"nether:rack_deep"},

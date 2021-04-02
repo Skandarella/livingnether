@@ -12,7 +12,7 @@ mobs.intllib = S
 local input = io.open(path .. "spawn.lua", "r")
 
 if input then
-	mobs.custom_spawn_animal = true
+	mobs.custom_spawn_livingnether = true
 	input:close()
 	input = nil
 end
@@ -32,7 +32,7 @@ dofile(path .. "sokameele.lua") --
 
 
 -- Load custom spawning
-if mobs.custom_spawn_animal then
+if mobs.custom_spawn_livingnether then
 	dofile(path .. "spawn.lua")
 end
 

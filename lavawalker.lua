@@ -57,7 +57,7 @@ stepheight = 4,
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:lavawalker",
 	nodes = {"nether:rack"},

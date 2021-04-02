@@ -57,7 +57,7 @@ view_range = 6,
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:cyst",
 	nodes = {"nether:sand", "nether:basalt"},

@@ -11,7 +11,7 @@ mobs:register_mob("livingnether:tardigrade", {
 	hp_min = 90,
 	hp_max = 120,
 	armor = 100,
-	collisionbox = {-0.6, -0.01, -0.6, 0.6, 0.95, 0.6},
+	collisionbox = {-0.6, -0.01, -0.6, 0.6, 0.7, 0.6},
 	visual = "mesh",
 	mesh = "Tardigrade.b3d",
 	textures = {
@@ -57,7 +57,7 @@ mobs:register_mob("livingnether:tardigrade", {
 	end,
 })
 
-if not mobs.custom_spawn_animal then
+if not mobs.custom_spawn_livingnether then
 mobs:spawn({
 	name = "livingnether:tardigrade",
 	nodes = {"nether:rack"},
