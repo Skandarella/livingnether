@@ -18,7 +18,7 @@ mobs:register_mob("livingnether:sokaarcher", {
 	mesh = "Sokaarcher.b3d",
 	drawtype = "front",
 	textures = {
-		{"texturesokaarcher.png"},
+		{"texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png","texturesokaarcher.png"},
 	},
 	visual_size = {x=1, y=1},
 	-- sounds
