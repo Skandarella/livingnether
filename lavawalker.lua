@@ -14,7 +14,7 @@ stepheight = 4,
 	mesh = "Lavawalker.b3d",
 	visual_size = {x = 1.0, y = 1.0},
 	textures = {
-		{"texturelavawalker.png"},
+		{"texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png","texturelavawalker.png",},
 	},
 	sounds = {
 		random = "livingnether_lavawalker",
