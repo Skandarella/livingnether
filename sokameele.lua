@@ -13,7 +13,7 @@ mobs:register_mob("livingnether:sokameele", {
 	mesh = "Sokameele.b3d",
 	visual_size = {x = 1.0, y = 1.0},
 	textures = {
-		{"texturesokameele.png"},
+		{"texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png","texturesokameele.png"},
 	},
 	sounds = {
 		attack = "livingnether_sokameele3",
