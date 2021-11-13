@@ -14,7 +14,7 @@ mobs:register_mob("livingnether:whip", {
 	mesh = "Whip.b3d",
 	visual_size = {x = 1.0, y = 1.0},
 	textures = {
-		{"texturewhip.png"},
+		{"texturewhip.png","texturewhip.png","texturewhip.png","texturewhip.png","texturewhip.png"},
 	},
 	sounds = {
 		attack = "livingnether_whip", 
