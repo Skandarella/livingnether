@@ -14,7 +14,7 @@ stepheight = 3,
 	mesh = "Flyingrod.b3d",
 	visual_size = {x = 1.0, y = 1.0},
 	textures = {
-		{"textureflyingrod.png"},
+		{"textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png","textureflyingrod.png"},
 	},
 	sounds = {
 		random = "livingnether_flyingrod",
