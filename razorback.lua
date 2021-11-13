@@ -14,7 +14,7 @@ stepheight = 2,
 	mesh = "Razorback.b3d",
 	visual_size = {x = 1.0, y = 1.0},
 	textures = {
-		{"texturerazorback.png"},
+		{"texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png","texturerazorback.png"},
 	},
 	sounds = {
 		random = "livingnether_razorback",
