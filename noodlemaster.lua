@@ -20,7 +20,7 @@ collisionbox = {-3,-1.0,-3,3,3,3},
 	mesh = "Noodlemaster.b3d",
 	visual_size = {x = 4.0, y = 4.0},
 	textures = {
-		{"texturenoodlemaster.png"},
+		{"texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png","texturenoodlemaster.png",},
 	},
 	sounds = {
 		death = "livingnether_noodlemaster",
