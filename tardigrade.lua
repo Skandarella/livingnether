@@ -15,7 +15,7 @@ mobs:register_mob("livingnether:tardigrade", {
 	visual = "mesh",
 	mesh = "Tardigrade.b3d",
 	textures = {
-		{"texturetardigrade.png"},
+		{"texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png","texturetardigrade.png",},
 	},
 	makes_footstep_sound = true,
 	sounds = {
