@@ -69,7 +69,7 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 5,
 	chance = 8000, -- 15000
-	min_height = -8000,
+	min_height = -18000,
 	max_height = -3000,
 })
 end
