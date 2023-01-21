@@ -1,3 +1,5 @@
+local S = minetest.get_translator("livingnether")
+
 mobs:register_mob("livingnether:cyst", {
 	type = "monster",
 	passive = false,
@@ -44,6 +46,11 @@ mobs:register_mob("livingnether:cyst", {
 		walk_end = 100,
 		hurt_start = 100,
 		hurt_end = 200,
+		die_start = 0,
+		die_end = 100,
+		die_speed = 50,
+		die_loop = false,
+		die_rotate = true,
 	},
 
 view_range = 6,
@@ -53,7 +60,7 @@ view_range = 6,
 		-- feed or tame
 		if mobs:feed_tame(self, clicker, 4, false, true) then return end
 		if mobs:protect(self, clicker) then return end
-		if mobs:capture_mob(self, clicker, 5, 50, 80, false, nil) then return end
+		if mobs:capture_mob(self, clicker, 0, 0, 0, false, nil) then return end
 	end,
 })
 
@@ -65,9 +72,9 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 5,
 	chance = 8000, -- 15000
-	min_height = -31000,
-	max_height = -1,
+	min_height = -18000,
+	max_height = -3000,
 })
 end
 
-mobs:register_egg("livingnether:cyst", ("Cyst"), "acyst.png")
+mobs:register_egg("livingnether:cyst", S("Cyst"), "acyst.png")

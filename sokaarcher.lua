@@ -1,3 +1,4 @@
+local S = minetest.get_translator("livingnether")
 
 mobs:register_mob("livingnether:sokaarcher", {
 	-- animal, monster, npc
@@ -31,6 +32,8 @@ mobs:register_mob("livingnether:sokaarcher", {
 	-- speed and jump
 	walk_velocity = 2,
 	run_velocity = 3,
+        stepheight = 2,
+        fear_height = 3,
 	jump = true,
 	drops = {
 		{name = "default:gold_lump",
@@ -42,6 +45,7 @@ mobs:register_mob("livingnether:sokaarcher", {
 	light_damage = 0,
 	fall_damage = 0,
 	view_range = 15,
+        stay_near = {{"nether:glowstone", "nether:fumarole", "nether:basalt"}, 5},
 	-- model animation
 	animation = {
 		speed_normal = 70,		speed_run = 100,
@@ -49,6 +53,11 @@ mobs:register_mob("livingnether:sokaarcher", {
 		walk_start = 100,		walk_end = 200,
 		run_start = 100,		run_end = 200,
 		shoot_start = 200,		shoot_end = 300,
+		die_start = 200,
+		die_end = 300,
+		die_speed = 50,
+		die_loop = false,
+		die_rotate = true,
 	},
 })
 
@@ -60,12 +69,12 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 3,
 	chance = 8000, -- 15000
-	min_height = -31000,
-	max_height = -1,
+	min_height = -18000,
+	max_height = -3000,
 })
 end
 
-mobs:register_egg("livingnether:sokaarcher", "Soka Archer", "asokaarcher.png")
+mobs:register_egg("livingnether:sokaarcher", S"Soka Archer", "asokaarcher.png")
 
 mobs:register_arrow("livingnether:sarrow", {
 	visual = "sprite",

@@ -1,3 +1,5 @@
+local S = minetest.get_translator("livingnether")
+
 mobs:register_mob("livingnether:flyingrod", {
 stepheight = 3,
 	type = "animal",
@@ -28,6 +30,7 @@ stepheight = 3,
         jump_height = 6,
 	fly = true,
 	stepheight = 3,
+        stay_near = {{"nether:glowstone", "nether:fumarole", "nether:basalt"}, 5},
 	drops = {
 		{name = "animalworld:chicken_raw", chance = 1, min = 1, max = 1},
 	        {name = "animalworld:chicken_feather", chance = 1, min = 1, max = 1},
@@ -41,11 +44,14 @@ stepheight = 3,
 		speed_normal = 130,
 		stand_start = 0,
 		stand_end = 100,
-		walk_start = 0,
-		walk_end = 100,
-		fly_start = 0, -- swim animation
+
+		fly_start = 0,
 		fly_end = 100,
-		-- 50-70 is slide/water idle
+		die_start = 0,
+		die_end = 100,
+		die_speed = 50,
+		die_loop = false,
+		die_rotate = true,
 	},
 
 fly_in = {"air"},
@@ -57,7 +63,7 @@ view_range = 4,
 		-- feed or tame
 		if mobs:feed_tame(self, clicker, 4, false, true) then return end
 		if mobs:protect(self, clicker) then return end
-		if mobs:capture_mob(self, clicker, 5, 50, 80, false, nil) then return end
+		if mobs:capture_mob(self, clicker, 0, 25, 0, false, nil) then return end
 	end,
 })
 
@@ -69,9 +75,9 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 5,
 	chance = 8000, -- 15000
-	min_height = -31000,
-	max_height = -1,
+	min_height = -18000,
+	max_height = -3000,
 })
 end
 
-mobs:register_egg("livingnether:flyingrod", ("Flyingrod"), "aflyingrod.png")
+mobs:register_egg("livingnether:flyingrod", S("Flyingrod"), "aflyingrod.png")

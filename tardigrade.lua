@@ -1,3 +1,5 @@
+local S = minetest.get_translator("livingnether")
+
 mobs:register_mob("livingnether:tardigrade", {
 	stepheight = 2,
 	type = "animal",
@@ -34,6 +36,7 @@ mobs:register_mob("livingnether:tardigrade", {
 	lava_damage = 5,
 	light_damage = 0,
 	fear_height = 3,
+        stay_near = {{"nether:glowstone", "nether:fumarole", "nether:basalt"}, 5},
 	animation = {
 		speed_normal = 75,
 		stand_start = 0,
@@ -42,10 +45,9 @@ mobs:register_mob("livingnether:tardigrade", {
 		walk_end = 200,
 		punch_start = 200,
 		punch_end = 300,
-
-		die_start = 1, -- we dont have a specific death animation so we will
-		die_end = 2, --   re-use 2 standing frames at a speed of 1 fps and
-		die_speed = 1, -- have mob rotate when dying.
+		die_start = 200,
+		die_end = 300,
+		die_speed = 50,
 		die_loop = false,
 		die_rotate = true,
 	},
@@ -53,7 +55,7 @@ mobs:register_mob("livingnether:tardigrade", {
 
 		if mobs:feed_tame(self, clicker, 8, true, true) then return end
 		if mobs:protect(self, clicker) then return end
-		if mobs:capture_mob(self, clicker, 0, 5, 50, false, nil) then return end
+		if mobs:capture_mob(self, clicker, 15, 25, 0, false, nil) then return end
 	end,
 })
 
@@ -65,12 +67,12 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 4,
 	chance = 8000, -- 15000
-	min_height = -31000,
-	max_height = -1,
+	min_height = -18000,
+	max_height = -3000,
 })
 end
 
-mobs:register_egg("livingnether:tardigrade", ("Tardigrade"), "atardigrade.png")
+mobs:register_egg("livingnether:tardigrade", S("Tardigrade"), "atardigrade.png")
 
 
 mobs:alias_mob("livingnether:tardigrade", "livingnether:tardigrade") -- compatibility

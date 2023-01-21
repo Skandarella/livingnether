@@ -1,3 +1,5 @@
+local S = minetest.get_translator("livingnether")
+
 mobs:register_mob("livingnether:noodlemaster", {
 stepheight = 3,
 	type = "monster",
@@ -67,7 +69,7 @@ view_range = 20,
 		-- feed or tame
 		if mobs:feed_tame(self, clicker, 4, false, true) then return end
 		if mobs:protect(self, clicker) then return end
-		if mobs:capture_mob(self, clicker, 5, 50, 80, false, nil) then return end
+		if mobs:capture_mob(self, clicker, 0, 0, 0, false, nil) then return end
 	end,
 })
 
@@ -78,12 +80,12 @@ mobs:spawn({
 	min_light = 0,
 	interval = 500,
 	chance = 8000, -- 15000
-	min_height = -31000,
-	max_height = -1,
+	min_height = -18000,
+	max_height = -3000,
 })
 end
 
-mobs:register_egg("livingnether:noodlemaster", ("Noodlemaster"), "anoodlemaster.png")
+mobs:register_egg("livingnether:noodlemaster", S("Noodlemaster"), "anoodlemaster.png")
 
 -- fireball (weapon)
 mobs:register_arrow("livingnether:lavaball", {
