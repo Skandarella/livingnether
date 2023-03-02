@@ -6,7 +6,17 @@ livingnether.settings = {
 	clear_biomes			= minetest.settings:get_bool("livingnether.clear_biomes") or false,
 	clear_decos			= minetest.settings:get_bool("livingnether.clear_decos") or false,
 	clear_ores			= minetest.settings:get_bool("livingnether.clear_ores") or false,
+	-- These values are from the HybridDog nether mod, which livingnether is expressly targeting.
+	min_height			= -18000,
+	max_height			= -3000,
 }
+
+-- livingnether isn't strictly made for this mod, but this allows better support for it.
+if minetest.global_exists("nether") and nether.DEPTH_CEILING then
+	--if minetest-mods nether is present
+	livingnether.settings.max_height = nether.DEPTH_CEILING
+	livingnether.settings.min_height = nether.DEPTH_FLOOR
+end
 
 if livingnether.settings.clear_biomes then
 	minetest.clear_registered_biomes()
