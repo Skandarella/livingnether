@@ -67,8 +67,8 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 4,
 	chance = 8000, -- 15000
-	min_height = -18000,
-	max_height = -3000,
+	min_height = livingnether.MIN_HEIGHT,
+	max_height = livingnether.MAX_HEIGHT,
 })
 end
 
@@ -76,4 +76,3 @@ mobs:register_egg("livingnether:tardigrade", S("Tardigrade"), "atardigrade.png")
 
 
 mobs:alias_mob("livingnether:tardigrade", "livingnether:tardigrade") -- compatibility
-
