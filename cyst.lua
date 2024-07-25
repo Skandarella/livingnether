@@ -21,7 +21,7 @@ mobs:register_mob("livingnether:cyst", {
 	},
 	sounds = {
 		damage = "livingnether_cyst",
-		fuse = "livingnether_cyst2", 
+		fuse = "livingnether_cyst2",
 		distance = 16,
 	},
 	makes_footstep_sound = false,
@@ -72,8 +72,8 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 5,
 	chance = 8000, -- 15000
-	min_height = -18000,
-	max_height = -3000,
+	min_height = livingnether.MIN_HEIGHT,
+	max_height = livingnether.MAX_HEIGHT,
 })
 end
 

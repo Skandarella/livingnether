@@ -20,10 +20,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Thanks to adikalon from Github for modifying the code to make automatic depth search possible
+
 
 Lincense for original Code (mobs redo + mobs_animal + pmobs + mobs_monster): (MIT) Copyright (c) 2014 Krupnov Pavel and 2016 TenPlus1
 
 Modified Code by Liil/Wilhelmine/Liil (c) 2021
 Sounds, Textures, Models and Animation by Liil/Wilhelmine/Liil under (MIT) License (c) 2021
+
+
 
 

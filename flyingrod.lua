@@ -34,7 +34,6 @@ stepheight = 3,
 	drops = {
 		{name = "animalworld:chicken_raw", chance = 1, min = 1, max = 1},
 	        {name = "animalworld:chicken_feather", chance = 1, min = 1, max = 1},
-	
 	},
 	water_damage = 0,
 	lava_damage = 4,
@@ -75,8 +74,8 @@ mobs:spawn({
 	interval = 60,
 	active_object_count = 5,
 	chance = 8000, -- 15000
-	min_height = -18000,
-	max_height = -3000,
+	min_height = livingnether.MIN_HEIGHT,
+	max_height = livingnether.MAX_HEIGHT,
 })
 end
 

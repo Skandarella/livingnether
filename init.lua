@@ -8,6 +8,9 @@ livingnether.settings = {
 	clear_ores			= minetest.settings:get_bool("livingnether.clear_ores") or false,
 }
 
+livingnether.MAX_HEIGHT = nether.DEPTH_CEILING
+livingnether.MIN_HEIGHT = nether.FLOOR_CEILING
+
 if livingnether.settings.clear_biomes then
 	minetest.clear_registered_biomes()
 end
@@ -44,15 +47,15 @@ end
 
 
 -- Animals
-dofile(path .. "razorback.lua") -- 
-dofile(path .. "lavawalker.lua") -- 
-dofile(path .. "tardigrade.lua") -- 
-dofile(path .. "flyingrod.lua") -- 
-dofile(path .. "cyst.lua") -- 
-dofile(path .. "whip.lua") -- 
-dofile(path .. "noodlemaster.lua") -- 
-dofile(path .. "sokaarcher.lua") -- 
-dofile(path .. "sokameele.lua") -- 
+dofile(path .. "razorback.lua") --
+dofile(path .. "lavawalker.lua") --
+dofile(path .. "tardigrade.lua") --
+dofile(path .. "flyingrod.lua") --
+dofile(path .. "cyst.lua") --
+dofile(path .. "whip.lua") --
+dofile(path .. "noodlemaster.lua") --
+dofile(path .. "sokaarcher.lua") --
+dofile(path .. "sokameele.lua") --
 
 
 

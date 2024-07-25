@@ -39,7 +39,6 @@ collisionbox = {-3,-1.0,-3,3,3,3},
 	fly = true,
 	drops = {
 		{name = "default:mese_crystal", chance = 1, min = 1, max = 3},
-	
 	},
 	water_damage = 1,
 	lava_damage = 0,
@@ -80,8 +79,8 @@ mobs:spawn({
 	min_light = 0,
 	interval = 500,
 	chance = 8000, -- 15000
-	min_height = -18000,
-	max_height = -3000,
+	min_height = livingnether.MIN_HEIGHT,
+	max_height = livingnether.MAX_HEIGHT,
 })
 end
 
