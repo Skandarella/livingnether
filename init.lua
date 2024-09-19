@@ -9,7 +9,7 @@ livingnether.settings = {
 }
 
 livingnether.MAX_HEIGHT = nether.DEPTH_CEILING
-livingnether.MIN_HEIGHT = nether.FLOOR_CEILING
+livingnether.MIN_HEIGHT = nether.DEPTH_FLOOR
 
 if livingnether.settings.clear_biomes then
 	minetest.clear_registered_biomes()

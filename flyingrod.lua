@@ -33,7 +33,7 @@ stepheight = 3,
         stay_near = {{"nether:glowstone", "nether:fumarole", "nether:basalt"}, 5},
 	drops = {
 		{name = "animalworld:chicken_raw", chance = 1, min = 1, max = 1},
-	        {name = "animalworld:chicken_feather", chance = 1, min = 1, max = 1},
+	  {name = "animalworld:chicken_feather", chance = 1, min = 1, max = 1},
 	},
 	water_damage = 0,
 	lava_damage = 4,
