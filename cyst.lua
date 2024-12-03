@@ -17,7 +17,7 @@ mobs:register_mob("livingnether:cyst", {
 	mesh = "Cyst.b3d",
 	visual_size = {x = 1.0, y = 1.0},
 	textures = {
-		{"texturecyst.png"},
+		{"texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png","texturecyst.png"},
 	},
 	sounds = {
 		damage = "livingnether_cyst",
